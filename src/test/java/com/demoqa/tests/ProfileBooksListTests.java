@@ -1,9 +1,6 @@
 package com.demoqa.tests;
 
-import com.codeborne.selenide.Condition;
 import com.demoqa.api.AddBooksListModel;
-import com.demoqa.api.AuthorizationApi;
-import com.demoqa.api.BooksApi;
 import com.demoqa.api.IsbnModel;
 import com.demoqa.models.LoginResponseModel;
 import org.junit.jupiter.api.Test;
@@ -19,7 +16,6 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static com.demoqa.tests.TestData.credentials;
 
 public class ProfileBooksListTests extends TestBase {
-
     @Test
     void deleteBookFromProfileTest() {
         LoginResponseModel loginResponse = authorizationApi.login(credentials);
