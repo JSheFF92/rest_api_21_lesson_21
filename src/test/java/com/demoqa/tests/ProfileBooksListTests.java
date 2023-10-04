@@ -1,6 +1,6 @@
 package com.demoqa.tests;
 
-import com.demoqa.api.AddBooksListModel;
+import com.demoqa.models.AddBooksListModel;
 import com.demoqa.api.IsbnModel;
 import com.demoqa.models.LoginResponseModel;
 import org.junit.jupiter.api.Test;
