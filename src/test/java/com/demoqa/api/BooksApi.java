@@ -2,6 +2,8 @@ package com.demoqa.api;
 
 import com.demoqa.models.AddBooksListModel;
 import com.demoqa.models.LoginResponseModel;
+import com.demoqa.models.DeleteOneBookModel;
+
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.http.ContentType.JSON;
@@ -27,5 +29,17 @@ public class BooksApi {
                 .post("/BookStore/v1/Books")
                 .then()
                 .statusCode(201);
+    }
+
+    public void deleteOneBook(LoginResponseModel loginResponse, DeleteOneBookModel deleteBookModel) {
+        given()
+                .contentType(JSON)
+                .header("Authorization", "Bearer " + loginResponse.getToken())
+                .queryParam("UserId", loginResponse.getUserId())
+                .body(deleteBookModel)
+                .when()
+                .delete("/BookStore/v1/Books")
+                .then()
+                .statusCode(204);
     }
 }
