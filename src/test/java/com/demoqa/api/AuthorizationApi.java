@@ -3,8 +3,8 @@ package com.demoqa.api;
 import com.demoqa.models.CredentialsModel;
 import com.demoqa.models.LoginResponseModel;
 
-import static com.demoqa.Spec.LoginSpec.LoginRequestSpec;
-import static com.demoqa.Spec.LoginSpec.successAuthSpec;
+import static com.demoqa.spec.LoginSpec.LoginRequestSpec;
+import static com.demoqa.spec.LoginSpec.successAuthSpec;
 import static io.restassured.RestAssured.given;
 
 public class AuthorizationApi {

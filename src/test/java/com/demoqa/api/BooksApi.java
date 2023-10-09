@@ -1,7 +1,7 @@
 package com.demoqa.api;
 
 
-import static com.demoqa.Spec.BookSpecs.*;
+import static com.demoqa.spec.BookSpecs.*;
 
 import com.demoqa.models.AddBooksListModel;
 import com.demoqa.models.DeleteResponseBookModel;
