@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import static com.demoqa.tests.TestData.*;
 import static io.qameta.allure.Allure.step;
 
-public class DeleteUiAndCheckApiTests extends TestBase{
+public class DeleteUiAndCheckApiTests extends TestBaseRemote{
     LoginPage loginPage = new LoginPage();
     ProfilePage profilePage = new ProfilePage();
     BookStorePage bookStorePage = new BookStorePage();
