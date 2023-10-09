@@ -52,6 +52,8 @@ public class TestBaseRemote {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
+
+//        closeWebDriver();
     }
 
 
