@@ -16,8 +16,6 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static com.demoqa.tests.TestData.credentials;
-import static io.restassured.RestAssured.given;
-import static io.restassured.http.ContentType.JSON;
 
 public class ProfileBooksListTests extends TestBaseRemote {
 
