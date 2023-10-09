@@ -1,6 +1,7 @@
 package com.demoqa.spec;
 
-import com.demoqa.tests.TestBase;
+
+import com.demoqa.tests.TestBaseRemote;
 import io.restassured.builder.ResponseSpecBuilder;
 
 import io.restassured.specification.RequestSpecification;
@@ -13,7 +14,7 @@ import static io.restassured.filter.log.LogDetail.BODY;
 import static io.restassured.filter.log.LogDetail.STATUS;
 import static io.restassured.http.ContentType.JSON;
 
-public class BookSpecs extends TestBase {
+public class BookSpecs extends TestBaseRemote {
     public static RequestSpecification bookRequestSpec = with()
             .filter(withCustomTemplates())
             .log().uri()
